@@ -41,6 +41,8 @@ function BookList() {
             };
         });
 
+        combineData.sort((a, b) => a.quantity - b.quantity);
+
         setBooks(combineData);
         setNoResults(combineData.length === 0);
     };
